@@ -1,9 +1,10 @@
+<html>
 <title>Auto HEN Installer HFW 4.93</title>
 <style type="text/css">
 	/* Estilos base compatibles con PS3 */
 	body {
 		background-color: #6A18A5;
-		background-image: url("img/bg.png");
+		background-image: url("../../img/bg.png");
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-position: center;
@@ -13,32 +14,42 @@
 		margin: 0;
 		padding: 0;
 		text-align: center;
+	}
 
-		/* BANNER */
-		.banner-container {
-			width: 100%;
-			margin: 0;
-			padding: 0;
-		}
+	/* BANNER */
+	.banner-container {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
 
-		.banner-container img {
-			width: 100%;
-			height: auto;
-			display: block;
-			border: none;
-		}
+	.banner-container img {
+		width: 100%;
+		height: auto;
+		display: block;
+		border: none;
+	}
+
+	.container {
+		width: 95%;
+		margin: 20px auto;
 	}
 </style>
 <link rel="stylesheet" href="style.css">
 <center>
-	<div class="banner-container">
-		<img src="img/banner.png" alt="YoshiHost PS3 Banner">
-	</div>
-	<h1><span style='color:#FF99FF'>Auto HEN Installer HFW 4.93</span></h1>
+
+	<body>
+		<div class="banner-container">
+			<img src="../../img/banner.png" alt="YoshiHost PS3 Banner">
+		</div>
+	</body>
+	<h1><span style='color:white'>Auto HEN Installer HFW 4.93</span></h1>
 	<h1><span style='color:white'>Gracias a Coro, lmn7, Joonie, evilnat, luan teles, habib, zecoxao, DeViL303,
 			xps3riments, aldostools, and PS3Xploit Team for their work used or hosted here.</span></h1>
 	<h1><span style='color:white'>HEN 3.5.0</span></h1>
-	<h1><span style='color:#FF9999'>Instalador modificado por VIDEOGAMES SCZ y gracias al equipo de PSXPlace por brindar
+	<h1><span style='color:white'>Apariencia del instalador modificada por Ale el Yoshi</span></h1>
+	<h1><span style='color:#FF9999'>Instalador modificado por VIDEOGAMES SCZ y gracias al equipo de PSXPlace por
+			brindar
 			sus herramientas y conocimientos, sin ellos no sería esto posible</span></h1>
 	<div id="result"></div>
 	<div id="exploit"></div>
@@ -370,8 +381,10 @@
 			total_loops = 0;
 		}
 		function HFWmsg() {
-			showMsg("<h2><span style='color:#FF9999'>Asegurate de tener instalado el Firmware (HFW) 4.91 en tu consola antes de usar esto!</h2></span>");
+			showMsg("<h2><span style='color:#FF9999'>Asegurate de tener instalado el Firmware (HFW) 4.93 en tu consola antes de usar esto!</h2></span>");
 			throw new Error('');
 		}
 		if (fwv == "4.93") { initROP(true) } else { HFWmsg() }
 	</script>
+
+</html>
